@@ -1,0 +1,153 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
+          rel="stylesheet">
+
+    <!-- title of site -->
+    <title>Boting账号登录</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/png" href="sign/img/favicon.png"/>
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="sign/css/font-awesome.min.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="sign/css/animate.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="sign/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="sign/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="sign/css/style.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="sign/css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- signin end -->
+<section class="signin popup-in">
+    <div class="container">
+
+        <form id="form" action="/" method="post">
+            <div class="sign-content popup-in-content">
+                <div class="popup-in-txt">
+                    <img src="main/img/logo-black.svg" alt="Logo">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="signin-form">
+                                <div class="form-group">
+                                    <label for="username">账号</label>
+                                    <input type="text" id="username" name="username" class="form-control"
+                                           placeholder="请输入账号">
+                                </div><!--/.form-group -->
+                                <div class="form-group">
+                                    <label for="password">密码</label>
+                                    <input type="password" id="password" name="password" class="form-control"
+                                           placeholder="请输入密码">
+                                </div><!--/.form-group -->
+                            </div><!--/.signin-form -->
+                        </div><!--/.col -->
+                    </div><!--/.row -->
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="signin-password">
+                                <div class="awesome-checkbox-list">
+                                    <ul class="unstyled centered">
+
+                                        <li>
+                                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox"
+                                                   value="value2">
+                                            <label for="styled-checkbox-2">记住密码</label>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">忘记密码？</a>
+                                        </li>
+
+                                    </ul>
+                                </div><!--/.awesome-checkbox-list -->
+                            </div><!--/.signin-password -->
+                        </div><!--/.col -->
+                    </div><!--/.row -->
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="signin-footer">
+                                <button type="submit" id="button" class="btn signin_btn">登录</button>
+                                <p>没有账号？<a href="signup.html">马上注册</a></p>
+                            </div><!--/.signin-footer -->
+                        </div><!--/.col-->
+                    </div><!--/.row -->
+                </div><!-- .popup-in-txt -->
+            </div><!--/.sign-content -->
+        </form>
+    </div><!--/.container -->
+
+</section><!--/.signin -->
+
+<!-- signin end -->
+
+<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+<script src="sign/js/jquery.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<script src="sign/js/bootstrap.min.js"></script>
+
+<script src="sign/js/bootsnav.js"></script>
+
+<script src="sign/js/jquery.sticky.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="sign/js/custom.js"></script>
+
+<script src="main/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+    $("#button").click(function () {
+        if ($("#username").val() == "" || $("#password").val() == "") {
+            alert("账号或密码未输入！");
+            $("form").attr("action", "signin.html");
+        } else if ($("#username").val() != "boting" || $("#password").val() != "123456") {
+            alert("账号或密码错误！");
+            $("form").attr("action", "signin.html");
+        }
+        $.cookie("username", $("#username").val(), {expires: 7, path: "/", domain: "localhost", secure: true});
+        $.cookie("password", $("#password").val(), {expires: 7, path: "/", domain: "localhost", secure: true});
+    })
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!--====== Title ======-->
+    <title>酒店-Boting酒店比价平台</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="main/img/favicon.png" type="img/png"/>
+    <!--====== Animate Css ======-->
+    <link rel="stylesheet" href="main/css/animate.min.css">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="main/css/bootstrap.min.css"/>
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="main/css/font-awesome.min.css"/>
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="main/css/flaticon.css"/>
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="main/css/magnific-popup.css"/>
+    <!--====== Owl Carousel css ======-->
+    <link rel="stylesheet" href="main/css/slick.css"/>
+    <!--====== Nice Select ======-->
+    <link rel="stylesheet" href="main/css/nice-select.css"/>
+    <!--====== Bootstrap Datepicker ======-->
+    <link rel="stylesheet" href="main/css/bootstrap-datepicker.css"/>
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="main/css/default.css"/>
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="main/css/style.css"/>
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!--====== PRELOader ======-->
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="cssload-container">
+        <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+    </div>
+</div>
+<!--====== HEADER START ======-->
+<header class="header-absolute sticky-header inner-page">
+    <div class="container container-custom-one">
+        <div class="nav-container d-flex align-items-center justify-content-between">
+            <!-- Main Menu -->
+            <div class="nav-menu d-lg-flex align-items-center">
+
+                <!-- Navbar Close Icon -->
+                <div class="navbar-close">
+                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <!-- Off canvas Menu  -->
+                <div class="toggle">
+                    <a href="#" id="offCanvasBtn"><i class="fal fa-bars"></i></a>
+                </div>
+                <!-- Mneu Items -->
+                <div class="menu-items">
+                    <ul>
+                        <li>
+                            <a href="/" style="font-size: 20px">首页</a>
+                        </li>
+                        <li>
+                            <a href="hotel" style="font-size: 20px">酒店</a>
+                        </li>
+                        <li>
+                            <a id="signin" href="signin" style="font-size: 20px">登录</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- from pushed-item -->
+                <div class="nav-pushed-item"></div>
+            </div>
+
+            <!-- Site Logo -->
+            <div class="site-logo">
+                <a href="index.html"><img src="main/img/logo-black.svg" alt="Logo"></a>
+            </div>
+
+            <!-- Header Info Pussed To Menu Wrap -->
+            <div class="nav-push-item">
+                <!-- Header Info -->
+                <div class="header-info d-lg-flex align-items-center">
+                    <div class="item">
+                        <i class="fal fa-phone"></i>
+                        <span>电话</span>
+                        <a href="tel:18717363351">
+                            <h5 class="title">18717363351</h5>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <i class="fal fa-envelope"></i>
+                        <span>邮箱</span>
+                        <a href="mailto:boting8088@foxmail.com">
+                            <h5 class="title">boting8088@foxmail.com</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navbar Toggler -->
+            <div class="navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</header>
+<!--====== HEADER PART END ======-->
+<!--====== OFF CANVAS START ======-->
+<div class="offcanvas-wrapper">
+    <div class="offcanvas-overly"></div>
+    <div class="offcanvas-widget">
+        <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+        <!-- Search Widget -->
+        <div class="widget search-widget">
+            <h5 class="widget-title">Search room</h5>
+            <form action="#">
+                <label>
+                    <input type="text" placeholder="Search your keyword...">
+                </label>
+                <button type="submit"><i class="far fa-search"></i></button>
+            </form>
+        </div>
+
+        <!-- About Widget -->
+        <div class="widget about-widget">
+            <h5 class="widget-title">About us</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis illo ipsa asperiores,
+                perspiciatis corrupti veritatis assumenda architecto commodi provident quas necessitatibus
+                consequatur praesentium magnam optio deserunt fugiat repellat culpa.
+            </p>
+        </div>
+        <!-- Nav Widget -->
+        <div class="widget nav-widget">
+            <h5 class="widget-title">Our pages</h5>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li>
+                    <a href="places.html">Places</a>
+                    <ul class="submenu">
+                        <li><a href="places-details.html">Places Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="gallery.html">Our Gallery</a></li>
+            </ul>
+        </div>
+        <!-- Social Link -->
+        <div class="widget social-link">
+            <h5 class="widget-title">Contact with us</h5>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-google"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--====== OFF CANVAS END ======-->
+<!--====== BREADCRUMB PART START ======-->
+<section class="breadcrumb-area" style="background-image: url(main/img/bg/04.jpg);">
+    <div class="container">
+        <div class="breadcrumb-text">
+            <span>The ultimate luxury</span>
+            <h2 class="page-title">酒店</h2>
+        </div>
+    </div>
+</section>
+<!--====== BREADCRUMB PART END ======-->
+<!--====== BOOKING FORM START ======-->
+<section class="booking-form">
+    <div class="container">
+        <div class="booking-form-inner">
+            <form method="get" action="/hotel">
+                <div class="row align-items-end">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="inputs-filed mt-30">
+                            <label for="arrival-date">入住日期</label>
+                            <div class="icon"><i class="fal fa-calendar-alt"></i></div>
+                            <input type="text" th:value="${checkIn}" placeholder="2021-05-25" name="arrival-date" id="arrival-date">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="inputs-filed mt-30">
+                            <label for="departure-date">退房日期</label>
+                            <div class="icon"><i class="fal fa-calendar-alt"></i></div>
+                            <input type="text" th:value="${checkOut}" placeholder="2021-05-26" name="departure-date" id="departure-date">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="inputs-filed mt-30">
+                            <label for="city">目的地</label>
+                            <input type="text" th:value="${hotelCity}" placeholder="请输入城市名称" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="inputs-filed mt-30">
+                            <label for="city">关键词</label>
+                            <input type="text" placeholder="请输入酒店关键词" name="keyword" id="keyword">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="inputs-filed mt-30">
+                            <button type="submit">搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!--====== BOOKING FORM END ======-->
+<!--====== ROOM-LIST START ======-->
+<section class="room-section room-list-style pt-120 pb-120" th:each="hotel:${hotelDetail.getRecords()}">
+    <div class="container">
+        <div class="room-list-loop">
+            <div class="room-box mb-30">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-lg-5 col-md-10">
+                        <div class="room-img-wrap">
+                            <div class="room-img"
+                                 th:style="'background-image: url('+${hotel.getHotel().getHotelPicture()}+');'"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-10">
+                        <div class="room-desc">
+                            <div class="row align-items-center">
+                                <div class="col-sm-8">
+                                    <ul class="icons">
+                                        <li><i class="fal fa-bed"></i></li>
+                                        <li><i class="fal fa-wifi"></i></li>
+                                        <li><i class="fal fa-car"></i></li>
+                                        <li><i class="fal fa-coffee"></i></li>
+                                        <li><i class="fal fa-concierge-bell"></i></li>
+                                        <li><i class="fal fa-compress-arrows-alt"></i></li>
+                                        <li><i class="fal fa-swimmer"></i></li>
+                                    </ul>
+                                    <div class="title">
+                                        <p class="hotel-id" th:text="${hotel.getHotel().getHotelId()}"></p>
+                                        <p class="hotel-name" th:text="${hotel.getHotel().getHotelName()}"></p>
+                                    </div>
+                                    <div class="content">
+                                        <p class="hotel-level"
+                                           th:if="${hotel.getHotel().getHotelLevel()>=2 and hotel.getHotel().getHotelLevel()<3}"
+                                           th:text="经济型"></p>
+                                        <p class="hotel-level"
+                                           th:if="${hotel.getHotel().getHotelLevel()>=3 and hotel.getHotel().getHotelLevel()<4}"
+                                           th:text="舒适型"></p>
+                                        <p class="hotel-level"
+                                           th:if="${hotel.getHotel().getHotelLevel()>=4 and hotel.getHotel().getHotelLevel()<5}"
+                                           th:text="高档型"></p>
+                                        <p class="hotel-level"
+                                           th:if="${hotel.getHotel().getHotelLevel()>=5 and hotel.getHotel().getHotelLevel()<6}"
+                                           th:text="豪华型"></p>
+                                        <p class="hotel-area" th:text="${hotel.getHotel().getHotelArea()}"></p>
+                                        <p class="hotel-location" th:text="${hotel.getHotel().getHotelLocation()}"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="text-sm-center">
+                                        <div class="ly">
+                                            <a class="ly-url" th:href="${hotel.getLyUrl()}" target="_blank">
+                                                <img src="main/img/ly-logo.png" sizes="100*20">
+                                                <p class="ly-grade" th:text="${hotel.getLyGrade()}"></p>
+                                                <p class="ly-comments" th:text="${hotel.getLyComments()}"></p>
+                                                <p class="ly-price" th:text="${hotel.getLyPrice()}"></p>
+                                            </a>
+                                        </div>
+                                        <div class="qunar">
+                                            <a class="qunar-url" th:href="${hotel.getQunarUrl()}" target="_blank">
+                                                <img src="main/img/qunar-logo.png" sizes="100*20">
+                                                <p class="qunar-grade" th:text="${hotel.getQunarGrade()}"></p>
+                                                <p class="qunar-comments" th:text="${hotel.getQunarComments()}"></p>
+                                                <p class="qunar-price" th:text="${hotel.getQunarPrice()}"></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== ROOM-LIST END ======-->
+<div class="pagination-wrap">
+    <ul>
+        <li th:if="${hotelDetail.getCurrent() >= 0}"><a th:href="@{'/hotel?page='+${hotelDetail.getCurrent() - 1}+'&arrival-date='+${checkIn}+'&departure-date='+${checkOut}+'&city='+${hotelCity}}" class="far fa-angle-double-left" ></a></li>
+        <li><a th:href="@{'/hotel?page='+${hotelDetail.getCurrent()}+'&arrival-date='+${checkIn}+'&departure-date='+${checkOut}+'&city='+${hotelCity}}" th:text="${hotelDetail.getCurrent()}"></a></li>
+        <li th:if="${hotelDetail.getCurrent() <= hotelDetail.getPages()}"><a class="far fa-angle-double-right"   th:href="@{'/hotel?page='+${hotelDetail.getCurrent()+1}+'&arrival-date='+${checkIn}+'&departure-date='+${checkOut}+'&city='+${hotelCity}}"></a></li>
+    </ul>
+</div>
+<!--====== Back to Top ======-->
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fal fa-angle-double-up"></i>
+</a>
+<!--====== FOOTER PART START ======-->
+<footer>
+    <div class="footer-subscibe-area pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="subscribe-text text-center">
+                        <div class="footer-logo mb-45">
+                            <img src="main/img/logo-black.svg" alt="Logo">
+                        </div>
+                        <p>
+                            There is a benefit to losing.You get to learn from your mistakes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--====== FOOTER PART END ======-->
+<!--====== jquery js ======-->
+<script src="main/js/modernizr-3.6.0.min.js"></script>
+<script src="main/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(".far .fa-angle-double-right").click(function () {
+        $.post()
+    })
+</script>
+<!--====== Bootstrap js ======-->
+<script src="main/js/bootstrap.min.js"></script>
+<script src="main/js/popper.min.js"></script>
+<!--====== Slick js ======-->
+<script src="main/js/slick.min.js"></script>
+<!--====== Isotope js ======-->
+<script src="main/js/isotope.pkgd.min.js"></script>
+<!--====== Magnific Popup js ======-->
+<script src="main/js/jquery.magnific-popup.min.js"></script>
+<!--====== inview js ======-->
+<script src="main/js/jquery.inview.min.js"></script>
+<!--====== counterup js ======-->
+<script src="main/js/jquery.countTo.js"></script>
+<!--====== Nice Select ======-->
+<script src="main/js/jquery.nice-select.min.js"></script>
+<!--====== Bootstrap datepicker ======-->
+<script src="main/js/bootstrap-datepicker.js"></script>
+<!--====== Wow JS ======-->
+<script src="main/js/wow.min.js"></script>
+<!--====== Google Map ======-->
+<script src="https://ditu.google.cn/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
+<script src="main/js/map.js"></script>
+<!--====== Main js ======-->
+<script src="main/js/main.js"></script>
+
+<script src="main/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+    $("#signin").click(function () {
+        if ($.cookie("username").length > 0 && $.cookie("password").length > 0) {
+            alert("您已登录");
+            $("#signin").attr("href", "hotel");
+        }
+    })
+
+    /*
+        $(window).load(function () {
+            for (var i = "1"; i <= 10; i++) {
+                $("#" + i + " .room-img").css("background-image", "url(" + $("#" + i).data("picture") + ")");
+                $("#" + i + " .hotel-id").html($("#" + i).data("id"));
+                $("#" + i + " .hotel-name").html($("#" + i).data("name"));
+                $("#" + i + " .hotel-level").html(fun($("#" + i).data("level")));
+                $("#" + i + " .hotel-area").html($("#" + i).data("area"));
+                $("#" + i + " .hotel-location").html($("#" + i).data("location"));
+                ["ly", "qunar"].forEach(function (item) {
+                    $("#" + i + " ." + item + "-url").attr("href", $("#" + i + " ." + item).data("url"));
+                    $("#" + i + " ." + item + "-grade").html($("#" + i + " ." + item).data("grade") + "分");
+                    $("#" + i + " ." + item + "-comments").html($("#" + i + " ." + item).data("comments") + "条评价");
+                    $("#" + i + " ." + item + "-price").html("￥" + $("#" + i + " ." + item).data("price") + "起");
+                })
+            }
+        })
+    */
+</script>
+</body>
+
+</html>
